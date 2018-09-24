@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+h2{
+	color: yellow;
+}
+h3{
+	color: red;
+}
+h4{
+	color: blue;
+}
+</style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+        <a href="#" class="navbar-brand d-md-none logo">PORTFOLIO : Divyam Shah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+            <a href="#" class="navbar-brand d-none d-md-block logo">PORTFOLIO :<h2> Divyam Shah</h2></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#i1" class="nav-link active">&nbsp INFORMATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#i2" class="nav-link">&nbsp ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#i3" class="nav-link">&nbsp SKILLS ACQUIRED</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#i4" class="nav-link">&nbsp PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#i5" class="nav-link">&nbsp CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="i1" class="row">
+        <div class="col-md-6" style="padding-top:33vh;">
+            <p class="title" style="margin-left: 10vh;"><h3>Divyam&nbsp Shah</h3></p>
+            <p class="text" style="margin-left: 10vh;"><h4>Coder - Web Developer - Sportsman</h4></p>
+        </div>
+        <div class="col-md-6">
+            <img src="Images/Me.jpg" id="me">
+        </div>
+    </div>
+    <div id="i2">
+        <p class="title" style="padding-top: 6vh; text-align: justify"><h3>ABOUT ME</h3></p>
+        <p style="color:black; text-align: justify; padding-left:10%; padding-right:10%; font-size:5vh">
+            Currently being a first year student at K.K. Birla Goa Campus, I enjoy coding and Web Development. I am good at chess and table-tennis. I have intermediate level knowledge in C++, JAVA and Python. I am a studious and focussed person who likes to help others.
+        </p>
+    </div>
+    <div id="i3">
+        <p class="title" style="padding-top:5vh;"><h3>SKILLS</h3></p>
+        <p class="text" style="text-align: left; padding-left: 14%">C++</p>
+        <div class="container">
+            <div class="skills c">80%</div>
+        </div>
+	<p class="text" style="text-align: left; padding-left: 14%">Python</p>
+        <div class="container">
+            <div class="skills python">50%</div>
+	<p class="text" style="text-align: left; padding-left: 6%">JAVA</p>
+        <div class="container">
+        <div class="skills JAVA">90%</div>
+        <p class="text" style="text-align: left; padding-left: 5%">HTML</p>
+        <div class="container">
+            <div class="skills html">70%</div>
+        </div>
+        <p class="text" style="text-align: left; padding-left: 5%">CSS</p>
+        <div class="container">
+            <div class="skills css">70%</div>
+        </div>
+        </div>
+    </div>
+    <div id="i4">
+        <p class="title" style="padding-top: 10vh; font-weight: 600;"><h3>PROJECTS</h3></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>	
+	<p style="color:black; text-align: justify; padding-left:10%; padding-right:10%; font-size:5vh">
+            <ol><li><b>GAME: 21 STICKS</b></li>
+		<li><b>EMPLOYEE DATA MANAGEMENT SYSTEM</b></li>
+	    		</ol> 
+        </p>
+    <div id="i5">
+        <p class="title" style="padding-top: 6vh; color: black"><h3>CONTACT</h3></p>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+            <div class="controls" style="padding-left:18%; padding-right:18%;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name" class="ftext">Firstname</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Firstname" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname" class="ftext">Lastname</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Lastname" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email" class="ftext">Email</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your Email" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+			<div class="row">
+                    <div class="col-md-6">
+                     
+                        <div class="form-group">
+                            <label for="form_phone" class="ftext">Mobile</label>
+                            <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="Please enter your Mobile Number" required="required" data-error="Valid Mobile is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+               </div>     
+               </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message" class="ftext">Message</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Any Message for Me" rows="4" required="required" data-error="Please, leave a Message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value=" Message Me ">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+ </body>
+</html>
